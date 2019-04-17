@@ -39,8 +39,8 @@ there are 4 predictors(variables/attributes) and 3 classes(types/species)
 # Visualisation
     Patterns
     First 2D scatter graph was drawn of the data set with sepal length and sepal width 
-    ![](Figure_1.png)
-    than colour coded graph was drawn as it is clear from the image data of stosa flowers is seprable from others
+   ![](Figure_1.png)
+    <p>than colour coded graph was drawn as it is clear from the image data of stosa flowers is seprable from others</p>
     ![](Figure_2.png)
-    next colour coded 2d scatter graph of petal width and length shows the same that the dat of stosa is clearly seprable.
+    <p>Next colour coded 2d scatter graph of petal width and length shows the same that the dat of stosa is clearly seprable.</p>
     ![](Figure_3.png)
