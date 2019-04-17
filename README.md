@@ -35,5 +35,12 @@ there are 4 predictors(variables/attributes) and 3 classes(types/species)
     EDA allows to:
     1. Better understand the data
     2. Build an intuition about the data
+    It is a balanced dataset
 # Visualisation
     Patterns
+    First 2D scatter graph was drawn of the data set with sepal length and sepal width 
+    ![](Figure_1.png)
+    than colour coded graph was drawn as it is clear from the image data of stosa flowers is seprable from others
+    ![](Figure_2.png)
+    next colour coded 2d scatter graph of petal width and length shows the same that the dat of stosa is clearly seprable.
+    ![](Figure_3.png)

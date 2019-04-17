@@ -1,29 +1,40 @@
-#import the pandas
-import pandas as pd
+#This program is to analyse the Iris Data Set
+import pandas as pd #import the pandas
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
 # reading file(load file in pandas dataframe)
 dataset = pd.read_csv("iris.csv")
+print("The Analysis of Iris Dataset")
+print("-----------------------------")
 
-print(dataset.shape) # number of data points and features (150,5)
+ # number of data points and features (150,5)
+print( "The number of data points and number of columns/features", dataset.shape)
+print("-----------------------------")
+# complete information of a data set data types etc
+print("Iris Data Set Info ")
+print(dataset.info()) 
 
-print(dataset.info()) # 
-
+print("Name of the columns of dataset")
 print(dataset.columns)# column names in dataset
 
-dataset["species"].value_counts()#how many flowers are of each species
+print("Number of data rows of each species")
+print(dataset["species"].value_counts())#how many flowers are of each species
 
 #Create 3 DataFrame for each Species
 setosa=dataset[dataset['species']=='setosa']
 versicolor =dataset[dataset['species']=='versicolor']
 virginica =dataset[dataset['species']=='virginica']
-#print information of 3 data sets
+print("information of 3 species data sets")
+print("Setosa")
 print(setosa.describe())
+print("versicolor")
 print(versicolor.describe())
+print("virginica")
 print(virginica.describe())
 #balanced data set as all 3 species has equal numbers of data points 50 each
-#2-D scatter plot(
+#2-D scatter plot of the data set
 dataset.plot(kind="scatter",x="sepal_length", y="sepal_width")
 plt.show()
 #2-D scatter with colour-coding for each species
