@@ -21,6 +21,7 @@ print(dataset.columns)# column names in dataset
 
 print("Number of data rows of each species")
 print(dataset["species"].value_counts())#how many flowers are of each species
+print(dataset.isnull().any())
 
 #Create 3 DataFrame for each Species
 setosa=dataset[dataset['species']=='setosa']
@@ -49,3 +50,4 @@ plt.show()
 # the graph shows that setosa species data can be easily seprated
 #it means by using petal_length and petal_width, setosa flowers can be identified from others
 # in this grap even virginica and versicolor are mostly seprable
+# build the box plot
