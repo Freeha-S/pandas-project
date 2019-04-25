@@ -1,17 +1,15 @@
 # Project 2019
-This repositery contains (Iris Data Set) project 2019 for the Module
-Programming and Scripting at GMIT.
-The aim of this project is to research the iris data set, and  write documentation and code in the Python programming language based on that research. @Freha
-
+This repositery contains (Iris Data Set) project 2019 for the Module "Programming and Scripting" of Higher Dip. in Data Analytics at GMIT.by Freha Saleem
+-----
+The aim of this project is to research the iris data set, and  write documentation and code in the Python programming language based on that research.
 ---------
-
-## Student Name : Freha Saleem
--------
+## Lecturer: Dr Ian McLoughlin
 
 # Background Information
 -----
 ## Iris Flower Data Set
-<img src="images\irisimage.png" width="400">
+
+![](images/irisimage.png)
 
 <p  align="justify">The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
 This dataset sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspé Peninsula "all from the same pasture and picked on the same day and measured at the same time by the same person with the same apparatus". </p>
@@ -21,10 +19,7 @@ Four features: sepal length, sepal width, petal length and petal width (meaureme
 -
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
-# Data Analysis Process
-![](AnalysisProcess.png)
-
-<h2>Description</h2>
+<h2>Summery</h2>
 This dataset consist of 150 rows of data and 5 columns 
 
 | sepal_length  | sepal_width  | petal_length | petal_width | species  |
@@ -32,9 +27,8 @@ This dataset consist of 150 rows of data and 5 columns
 |               |              |              |             |          |
 
 There are 3 classes (types/species) and 4 predictors (variables/attributes) 
-
 <h3>Species(classes)</h3>
-
+    
     1. Setosa    
     2. Virginica 
     3. versicolor
@@ -45,6 +39,15 @@ There are 3 classes (types/species) and 4 predictors (variables/attributes)
     2. sepal_width  (in cm)
     3. petal_length (in cm)
     4. petal_width (in cm) 
+    
+# Data Analysis Process
+    
+When looking at the data analysis i come across this diagram it is explaining the whole process of data anlysis. I used Ms Word to draw it. as In this project data is already collected therefore  I only download that data from the data source *link is given above*. 
+
+![](images/AnalysisProcess.png)
+
+I start from seond phase that is Exploration of data.
+
 # Import Python Libraries for Data Analysis
     
     import pandas as pd    
