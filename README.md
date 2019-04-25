@@ -44,7 +44,7 @@ There are 3 classes (types/species) and 4 predictors (variables/attributes)
     
 When looking at the data analysis i come across this diagram it is explaining the whole process of data anlysis. I used Ms Word to draw it. as In this project data is already collected therefore  I only download that data from the data source *link is given above*. 
 
-![](images/AnalysisProcess.png)
+![](images/AnalysisProcess.PNG)
 
 I start from seond phase that is Exploration of data.
 
@@ -54,44 +54,59 @@ I start from seond phase that is Exploration of data.
     import numpy as np
     import matplotlib.pyplot as plt
     import seaborn as sns
-   
-    - Pandas:
-         pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. pandas is a NumFOCUS sponsored project.
-            [source: https://pandas.pydata.org/] </p>
     
-    - NumPy:
-        NumPy is the fundamental package for scientific computing with Python. 
+- **pandas**
+        is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. pandas is a NumFOCUS sponsored project.
+            [source: https://pandas.pydata.org/] 
+            Pandas is the most popular data manipulation package in Python, and DataFrames are the Pandas data type for storing tabular 2D data.
+ 
+- **numpy**
+        is the fundamental package for scientific computing with Python. 
     
-    - matplotlib:
-        Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[source: https://matplotlib.org/]
+- **matplotlib**
+        is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.[source: https://matplotlib.org/]
     
-    - Seaborn:
-        Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. [source: https://seaborn.pydata.org/]
+- **seaborn**
+        is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. [source: https://seaborn.pydata.org/]
     
    
 # Read Data
+  First download the datset csv file from the 
+Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data and save it in the project folder as iris.cvs.
     
-    dataset = pd.read_csv("iris.csv")
-    
-    print the name of columns
-    
+*( CSV is a simple file format used to store tabular data. CSV (comma-separated value) file format is common for transferring and storing data. The ability to read, manipulate, and write data to and from CSV files using Python is a key skill for any data scientist or business analysis.)*
+   
+  Read data from file 'iris.csv'into pandas DataFrames
+  ```
+   dataset = pd.read_csv("iris.csv")
+   ```  
+   Print the name of columns (headings)
+   ``` 
     dataset.columns
-
-
+    
+   ```
 # Exploratory Data Analysis(EDA)
-    EDA allows to:
+   
+ for Exploratory Data Analysis we use descriptive statistics and graphs. 
+ it allows to:
     1. Better understand the data
     2. Build an intuition about the data
-
-    It is a balanced dataset. The number of observations is same for all the classes in the dataset.
+The number of data points and number of columns/features
+```
+print(dataset.shape)
+(150,5)
+```
+There is not any value null in data set
+   ``` 
+     dataset.isnull().any()
+   ```
+It is a balanced dataset. The number of observations is same for all the classes in the dataset.
         
         dataset["species"].value_counts()
     
         50 rows for each species
     
-    There is not any value null in data
-    
-         dataset.isnull().any()
+   
     
     Information about dataset
     
@@ -108,7 +123,7 @@ I start from seond phase that is Exploration of data.
     ![](Figure_3.png)
     <p>The best tool to identify the outliers is the box plot.</p>
 # Reference
-    
+    Python Pandas read_csv – Load Data from CSV Files [https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/]
     Iris datset-Exploratory Data Analysis [https://www.kaggle.com/lalitharajesh/iris-dataset-exploratory-data-analysis]
     Iris Data Visualization [https://www.kaggle.com/kstaud85/iris-data-visualization]
     Visualize Iris dataset using Python [http://www.learn4master.com/machine-learning/visualize-iris-dataset-using-python]
