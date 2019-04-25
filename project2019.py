@@ -1,4 +1,4 @@
-#This program is to analyse the Iris Data Set
+#This program part of Programming and Scripting is to analyse the Iris Data Set
 import pandas as pd #import the pandas
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,6 +26,10 @@ print(dataset.head(10))
 print("Number of data rows of each species")
 print(dataset["species"].value_counts())#how many flowers are of each species
 print(dataset.isnull().any())
+
+#statistics of data set
+print(dataset.describe())
+
 
 #Create 3 DataFrame for each Species
 setosa=dataset[dataset['species']=='setosa']

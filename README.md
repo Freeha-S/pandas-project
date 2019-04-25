@@ -11,7 +11,7 @@ The aim of this project is to research the iris data set, and  write documentati
 # Background Information
 -----
 ## Iris Flower Data Set
-<img src="images\irisimage.png" width="400">
+<img src="images\irisimage.png" width="500">
 
 <p  align="justify">The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
 This dataset sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspé Peninsula "all from the same pasture and picked on the same day and measured at the same time by the same person with the same apparatus". </p>
@@ -22,7 +22,8 @@ Four features: sepal length, sepal width, petal length and petal width (meaureme
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
 # Data Analysis Process
-![](AnalysisProcess.png)
+
+<img src="images\AnalysisProcess.png" width="500">
 
 <h2>Description</h2>
 This dataset consist of 150 rows of data and 5 columns 
@@ -52,9 +53,9 @@ There are 3 classes (types/species) and 4 predictors (variables/attributes)
     import matplotlib.pyplot as plt
     import seaborn as sns
    
-    - Pandas:
+    * Pandas:
          pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. pandas is a NumFOCUS sponsored project.
-            [source: https://pandas.pydata.org/] </p>
+            [source: https://pandas.pydata.org/]
     
     - NumPy:
         NumPy is the fundamental package for scientific computing with Python. 
