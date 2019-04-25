@@ -76,59 +76,60 @@ Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/ir
     
 *( CSV is a simple file format used to store tabular data. CSV (comma-separated value) file format is common for transferring and storing data. The ability to read, manipulate, and write data to and from CSV files using Python is a key skill for any data scientist or business analysis.)*
    
-  Read data from file 'iris.csv'into pandas DataFrames
+Read data from file 'iris.csv'into pandas DataFrames
   ```
    dataset = pd.read_csv("iris.csv")
    ```  
-   Print the name of columns (headings)
+Print the name of columns (headings)
    ``` 
-    dataset.columns
-    
+    dataset.columns 
    ```
    ![](images/columns.PNG)
+
 # Exploratory Data Analysis(EDA)
    
- for Exploratory Data Analysis we use descriptive statistics and graphs. 
+    For Exploratory Data Analysis we use descriptive statistics and graphs. 
 
- it allows to:
+    it allows to:
 
     1. Better understand the data
     2. Build an intuition about the data
 
 The number of data points and number of columns/features
-```
-print(dataset.shape)
+    ```
+    print(dataset.shape)
+    ```
 (150,5)
-```
+
 There is not any value null in data set
    ``` 
      dataset.isnull().any()
    ```
-   ![](images/inNull.png)
+   ![](images/notNull.png)
 
 It is a balanced dataset. The number of observations is same for all the classes in the dataset.
-     ```   
-        dataset["species"].value_counts()
+    ```   
+     dataset["species"].value_counts()
     ```
-        ![](images/rows.png)
+    ![](images/rows.png)
     
-        50 rows for each species
+    50 rows for each species
 
 Information about dataset
     ```
        print(dataset.info()) 
     ```
-        ![](images/datasetInfo.png)
-First 10 rows of data set
+    ![](images/datasetInfo.png)
 
+First 10 rows of data set
     ```
        print(dataset.head(10)) 
     ```
     ![](images/head.png)
  
- Statistics summery of dataset
+Statistics summery of dataset
     ```
-       print(dataset.describe()) 
+     print(dataset.describe()) 
     ```
     ![](images/datasetdescribe.PNG)
     
