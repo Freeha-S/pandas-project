@@ -8,12 +8,8 @@ The aim of this project is to research the iris data set, and  write documentati
 # Background Information
 -----
 ## Iris Flower Data Set
-<<<<<<< HEAD
-<img src="images\irisimage.png" width="500">
-=======
 
 ![](images/irisimage.png)
->>>>>>> 5df2a090536272785bb1cb5bce3a67424a178fd5
 
 <p  align="justify">The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
 This dataset sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspé Peninsula "all from the same pasture and picked on the same day and measured at the same time by the same person with the same apparatus". </p>
@@ -23,15 +19,7 @@ Four features: sepal length, sepal width, petal length and petal width (meaureme
 -
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
-<<<<<<< HEAD
-# Data Analysis Process
-
-<img src="images\AnalysisProcess.png" width="500">
-
-<h2>Description</h2>
-=======
 <h2>Summery</h2>
->>>>>>> 5df2a090536272785bb1cb5bce3a67424a178fd5
 This dataset consist of 150 rows of data and 5 columns 
 
 | sepal_length  | sepal_width  | petal_length | petal_width | species  |
@@ -66,13 +54,6 @@ I start from seond phase that is Exploration of data.
     import numpy as np
     import matplotlib.pyplot as plt
     import seaborn as sns
-<<<<<<< HEAD
-   
-    * Pandas:
-         pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. pandas is a NumFOCUS sponsored project.
-            [source: https://pandas.pydata.org/]
-=======
->>>>>>> 5df2a090536272785bb1cb5bce3a67424a178fd5
     
 - **pandas**
         is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. pandas is a NumFOCUS sponsored project.
@@ -104,12 +85,16 @@ Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/ir
     dataset.columns
     
    ```
+   ![](images/columns.PNG)
 # Exploratory Data Analysis(EDA)
    
  for Exploratory Data Analysis we use descriptive statistics and graphs. 
+
  it allows to:
+
     1. Better understand the data
     2. Build an intuition about the data
+
 The number of data points and number of columns/features
 ```
 print(dataset.shape)
@@ -119,17 +104,33 @@ There is not any value null in data set
    ``` 
      dataset.isnull().any()
    ```
+   ![](images/inNull.png)
+
 It is a balanced dataset. The number of observations is same for all the classes in the dataset.
-        
+     ```   
         dataset["species"].value_counts()
+    ```
+        ![](images/rows.png)
     
         50 rows for each species
-    
-   
-    
-    Information about dataset
-    
-        dataset.info()
+
+Information about dataset
+    ```
+       print(dataset.info()) 
+    ```
+        ![](images/datasetInfo.png)
+First 10 rows of data set
+
+    ```
+       print(dataset.head(10)) 
+    ```
+    ![](images/head.png)
+ 
+ Statistics summery of dataset
+    ```
+       print(dataset.describe()) 
+    ```
+    ![](images/datasetdescribe.PNG)
     
 
 # Visualisation
