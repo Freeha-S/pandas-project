@@ -44,45 +44,47 @@ print("virginica")
 print(virginica.describe())
 #balanced data set as all 3 species has equal numbers of data points 50 each
 # histograms
-dataset.hist()
-plt.show()
 
-# sepal length i
-plt.figure(figsize = (10, 7)) 
-x = dataset["sepal_length"] 
-  
+# sepal length histogram for the dataset
+plt.figure() 
+x = dataset["sepal_length"]
 plt.hist(x, bins = 20, color = "blue") 
 plt.title("Sepal Length in cm") 
-plt.xlabel("Sepal_Length_cm") 
+plt.xlabel("Sepal Length (cm)") 
 plt.ylabel("Count") 
 plt.show()
-plt.figure(figsize = (10, 7)) 
+# sepal width histogram for the dataset
+plt.figure() 
 x = dataset["sepal_width"] 
-  
 plt.hist(x, bins = 20, color = "blue") 
 plt.title("Sepal Widthh in cm") 
-plt.xlabel("Sepal_Width_cm") 
+plt.xlabel("Sepal Width (cm)") 
 plt.ylabel("Count") 
 plt.show()
-#petal length
-plt.figure(figsize = (10, 7)) 
-x = dataset["petal_length"] 
-  
+#petal length histogram for the dataset
+plt.figure()
+x = dataset["petal_length"]   
 plt.hist(x, bins = 20, color = "blue") 
 plt.title("Petal Length in cm") 
 plt.xlabel("Petal_Length_cm") 
 plt.ylabel("Count") 
 plt.show()
-#petal width
+#petal width histogram for the dataset
 plt.figure(figsize = (10, 7)) 
-x = dataset["petal_width"] 
-  
+x = dataset["petal_width"]  
 plt.hist(x, bins = 20, color = "blue") 
 plt.title("Petal Width in cm") 
 plt.xlabel("Petal_width_cm") 
 plt.ylabel("Count") 
 plt.show()
+
+# histogram for all 4 variables of data set
+dataset.hist()
+
+plt.show()
+
 # build the box plot
+
 dataset.boxplot(by="species", figsize=(10, 10))
 plt.show()
 

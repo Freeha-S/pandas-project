@@ -46,8 +46,6 @@ Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/ir
     
 ![](images/AnalysisProcess.PNG)
 
-I start from seond phase that is Exploration of data.
-
 # Import Python Libraries for Data Analysis
     
     import pandas as pd    
@@ -73,6 +71,8 @@ I start from seond phase that is Exploration of data.
 # Read Data
   First download the datset csv file from the 
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data and save it in the project folder as iris.cvs.
+
+![](images/iriscsv.PNG)
     
 *( CSV is a simple file format used to store tabular data. CSV (comma-separated value) file format is common for transferring and storing data. The ability to read, manipulate, and write data to and from CSV files using Python is a key skill for any data scientist or business analysis.)*
    
@@ -101,7 +101,7 @@ Print the name of columns (headings)
    ```
     (150,5)
 
-- There is not any null value in data set *to check if there is any empty cell*
+- There is not any null value in data set *check if there is any empty cell*
    ``` 
      print(dataset.isnull().any())
    ```
@@ -153,10 +153,21 @@ Print the name of columns (headings)
 # Visualisation of Dataset
 ## Histogram
 
-    A histogram is a great tool for quickly assessing a probability distribution that is  understood by almost any audience. Python offers a handful of different options for building and plotting histograms. Most people know a histogram by its graphical representation, which is similar to a bar graph
-## Box Plot
+    A histogram is a great tool for quickly assessing a probability distribution that is  understood by almost any audience. Python offers a handful of different options for building and plotting histograms. Most people know a histogram by its graphical representation, which is similar to a bar graph.
+     ![](graphs/Capture.PNG)
+
+## BoxPlot
    
-    Boxplot is probably one of the most common type of graphic. It gives a summary of one or several numeric variables. The line that divides the box into 2 parts represents the **median** of the data. The end of the box shows **the upper and lower quartiles**. The extreme lines shows **the highest and lowest value excluding outliers**. Note that boxplot hide the number of values existing behind the variable.
+    Boxplot (box and wisker graph) is probably one of the most common type of graphic. A boxplot is a standardized way of displaying the distribution of data based on a five number summary (“minimum”, first quartile (Q1), median, third quartile (Q3), and “maximum”).
+    It can tell you about your outliers and what their values are. It can also tell you if your data is symmetrical, how tightly your data is grouped, and if and how your data is skewed.
+    The line that divides the box into 2 parts represents the **median** of the data. The end of the box shows **the upper and lower quartiles**. The extreme lines shows **the highest and lowest value excluding outliers**. Note that boxplot hide the number of values existing behind the variable.
+    
+  ![](images/boxplotexplained.png)
+
+    Source:https://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/
+
+**Box plot of all varients grouped by species
+![](graphs/boxplot.PNG)
 
 ## Scatter Graph
     
