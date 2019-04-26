@@ -43,6 +43,9 @@ print(versicolor.describe())
 print("virginica")
 print(virginica.describe())
 #balanced data set as all 3 species has equal numbers of data points 50 each
+# histograms
+dataset.hist()
+plt.show()
 
 # sepal length i
 plt.figure(figsize = (10, 7)) 

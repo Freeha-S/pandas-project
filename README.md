@@ -1,4 +1,4 @@
-# Project 2019
+﻿# Project 2019
 This repositery contains (Iris Data Set) project 2019 for the Module "Programming and Scripting" of Higher Dip. in Data Analytics at GMIT.by Freha Saleem
 -----
 The aim of this project is to research the iris data set, and  write documentation and code in the Python programming language based on that research.
@@ -19,31 +19,31 @@ Four features: sepal length, sepal width, petal length and petal width (meaureme
 -
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
-<h2>Summery</h2>
-This dataset consist of 150 rows of data and 5 columns 
+<h2>Summery of DataSet</h2>
 
-| sepal_length  | sepal_width  | petal_length | petal_width | species  |
-| :-----------: | :----------: | :----------: | :---------: | :------: |
-|               |              |              |             |          |
+**This dataset consist of 150 rows of data in 5 columns** 
 
-There are 3 classes (types/species) and 4 predictors (variables/attributes) 
-<h3>Species(classes)</h3>
-    
-    1. Setosa    
-    2. Virginica 
-    3. versicolor
+    | sepal_length  | sepal_width  | petal_length | petal_width | species  |
+    | :-----------: | :----------: | :----------: | :---------: | :------: |
+    |               |              |              |             |          |
 
-<h3>Attributes</h3>
+**There are 3 classes (types/species) and 4 predictors (variables/attributes) in this data set**
+        
+**Species(classes)**
+            
+         1. Setosa    
+         2. Virginica 
+         3. versicolor
 
-    1. sepal_length (in cm)
-    2. sepal_width  (in cm)
-    3. petal_length (in cm)
-    4. petal_width (in cm) 
+**Attributes**
+
+        1. sepal_length (in cm)
+        2. sepal_width  (in cm)
+        3. petal_length (in cm)
+        4. petal_width (in cm) 
     
 # Data Analysis Process
     
-When looking at the data analysis i come across this diagram it is explaining the whole process of data anlysis. I used Ms Word to draw it. as In this project data is already collected therefore  I only download that data from the data source *link is given above*. 
-
 ![](images/AnalysisProcess.PNG)
 
 I start from seond phase that is Exploration of data.
@@ -88,63 +88,96 @@ Print the name of columns (headings)
 
 # Exploratory Data Analysis(EDA)
    
-    For Exploratory Data Analysis we use descriptive statistics and graphs. 
-
-    it allows to:
+   Exploratory Data Analysis is an approach/philosophy for data analysis that employs a variety of techniques to:
 
     1. Better understand the data
     2. Build an intuition about the data
 
-The number of data points and number of columns/features
-    ```
-    print(dataset.shape)
-    ```
-(150,5)
+## Insight into Dataset
 
-There is not any value null in data set
+- The number of data points and number of columns/features
+   ```
+     print(dataset.shape)
+   ```
+    (150,5)
+
+- There is not any null value in data set *to check if there is any empty cell*
    ``` 
-     dataset.isnull().any()
+     print(dataset.isnull().any())
    ```
    ![](images/notNull.png)
 
-It is a balanced dataset. The number of observations is same for all the classes in the dataset.
-    ```   
-     dataset["species"].value_counts()
-    ```
-    ![](images/rows.png)
-    
+- It is a **balanced dataset**. The number of observations is same for all the classes in the dataset.
+   ```   
+     print(dataset["species"].value_counts())
+   ```
+   ![](images/rows.png)
+   
     50 rows for each species
 
-Information about dataset
-    ```
-       print(dataset.info()) 
-    ```
-    ![](images/datasetInfo.png)
+- Information about dataset
+   ```
+     print(dataset.info()) 
+   ```
+   ![](images/datasetInfo.png)
 
-First 10 rows of data set
-    ```
-       print(dataset.head(10)) 
-    ```
-    ![](images/head.png)
+- First 10 rows of data set
+   ```
+      print(dataset.head(10)) 
+   ```
+   ![](images/head.png)
  
-Statistics summery of dataset
-    ```
+- Statistics summery of dataset
+   ```
      print(dataset.describe()) 
-    ```
+   ```
     ![](images/datasetdescribe.PNG)
+
+- Statistics summery of dataset of three species seprately
+   ```
+     #Create 3 DataFrame for each Species
+     setosa=dataset[dataset['species']=='setosa']
+     versicolor =dataset[dataset['species']=='versicolor']
+     virginica =dataset[dataset['species']=='virginica']
+     print("information of 3 species data sets")
+     print("Setosa")
+     print(setosa.describe())
+     print("versicolor")
+     print(versicolor.describe())
+     print("virginica")
+     print(virginica.describe()) 
+   ```
+    ![](images/sdescribe.PNG)
     
 
-# Visualisation
-    Patterns
+# Visualisation of Dataset
+## Histogram
+
+    A histogram is a great tool for quickly assessing a probability distribution that is  understood by almost any audience. Python offers a handful of different options for building and plotting histograms. Most people know a histogram by its graphical representation, which is similar to a bar graph
+## Box Plot
+   
+    Boxplot is probably one of the most common type of graphic. It gives a summary of one or several numeric variables. The line that divides the box into 2 parts represents the **median** of the data. The end of the box shows **the upper and lower quartiles**. The extreme lines shows **the highest and lowest value excluding outliers**. Note that boxplot hide the number of values existing behind the variable.
+
+## Scatter Graph
+    
+    A scatter plot/ scatter graph is a two-dimensional data visualization that uses dots to represent the values obtained for two different variables - one plotted along the x-axis and the other plotted along the y-axis.
+    scatter graphs are powerful data visualization tools. these are also used to show if there is any connection between groups of data.
+    If there is a strong connection or correlation, a ‘line of best fit’ can be drawn.
+    
+### Patterns
     First 2D scatter graph was drawn of the data set with sepal length and sepal width 
-   ![](Figure_1.png)
+   ![](graphs/Figure_1.png)
     <p>than colour coded graph was drawn as it is clear from the image data of stosa flowers is seprable from others</p>
-    ![](Figure_2.png)
+    ![](graphs/Figure_2.png)
     <p>Next colour coded 2d scatter graph of petal width and length shows the same that the dat of stosa is clearly seprable.</p>
-    ![](Figure_3.png)
+    ![](graphs/Figure_3.png)
     <p>The best tool to identify the outliers is the box plot.</p>
 # Reference
-    Python Pandas read_csv – Load Data from CSV Files [https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/]
-    Iris datset-Exploratory Data Analysis [https://www.kaggle.com/lalitharajesh/iris-dataset-exploratory-data-analysis]
-    Iris Data Visualization [https://www.kaggle.com/kstaud85/iris-data-visualization]
-    Visualize Iris dataset using Python [http://www.learn4master.com/machine-learning/visualize-iris-dataset-using-python]
+
+1. Python Pandas read_csv – Load Data from CSV Files:[https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/]
+2. Iris datset-Exploratory Data Analysis[https://www.kaggle.com/lalitharajesh/iris-dataset-exploratory-data-analysis]
+3. Iris Data Visualization: [https://www.kaggle.com/kstaud85/iris-data-visualization]
+4. Scatter graphs [https://www.bbc.com/bitesize/guides/zmt9q6f/revision/1]
+5. Visualize Iris dataset using Python [http://www.learn4master.com/machine-learning/visualize-iris-dataset-using-python]
+6. Python Histogram : [https://realpython.com/python-histograms/]
+7. Boxplot: [https://python-graph-gallery.com/boxplot/]
