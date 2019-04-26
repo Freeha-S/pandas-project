@@ -70,7 +70,7 @@ plt.xlabel("Petal_Length_cm")
 plt.ylabel("Count") 
 plt.show()
 #petal width histogram for the dataset
-plt.figure(figsize = (10, 7)) 
+plt.figure() 
 x = dataset["petal_width"]  
 plt.hist(x, bins = 20, color = "blue") 
 plt.title("Petal Width in cm") 
@@ -85,11 +85,15 @@ plt.show()
 
 # build the box plot
 
-dataset.boxplot(by="species", figsize=(10, 10))
+dataset.boxplot(by="species", figsize=(7,7))
 plt.show()
 
-plt.figure(figsize = (10, 7)) 
-sns.boxplot(x="species", y="petal_length", data=dataset)
+#sns.boxplot(by="speciecs", data=dataset)
+#plt.show()
+
+ax = sns.boxplot(data=dataset, orient="h", palette="Set2")
+
+#sns.boxplot(x="species", y="petal_length", data=dataset)
 plt.show()
 
 #2-D scatter plot of the data set
