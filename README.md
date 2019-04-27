@@ -140,35 +140,49 @@ Print the name of columns (headings)
      versicolor =dataset[dataset['species']=='versicolor']
      virginica =dataset[dataset['species']=='virginica']
      print("information of 3 species data sets")
-     print("Setosa")
-     print(setosa.describe())
-     print("versicolor")
-     print(versicolor.describe())
-     print("virginica")
-     print(virginica.describe()) 
+     print("Descriptive statistics of Setosa")
+     print(setosa.describe().round(3))
+     print("Descriptive statistics of versicolor")
+     print(versicolor.describe().round(3))
+     print("Descriptive statistics of virginica")
+     print(virginica.describe().round (3))
    ```
     ![](images/sdescribe.PNG)
+
+    ![](images/verdescribe.PNG)
+    
+    ![](images/virdescribe.PNG)
     
 
 # Visualisation of Dataset
 ## Histogram
 
     A histogram is a great tool for quickly assessing a probability distribution that is  understood by almost any audience. Python offers a handful of different options for building and plotting histograms. Most people know a histogram by its graphical representation, which is similar to a bar graph.
-     ![](graphs/Capture.PNG)
+![](graphs/Capture.PNG)
 
 ## BoxPlot
    
     Boxplot (box and wisker graph) is probably one of the most common type of graphic. A boxplot is a standardized way of displaying the distribution of data based on a five number summary (“minimum”, first quartile (Q1), median, third quartile (Q3), and “maximum”).
     It can tell you about your outliers and what their values are. It can also tell you if your data is symmetrical, how tightly your data is grouped, and if and how your data is skewed.
-    The line that divides the box into 2 parts represents the **median** of the data. The end of the box shows **the upper and lower quartiles**. The extreme lines shows **the highest and lowest value excluding outliers**. Note that boxplot hide the number of values existing behind the variable.
+    The line that divides the box into 2 parts represents the **median** of the data. The end of the box shows **the upper and lower quartiles**. The extreme lines shows **the highest and lowest value excluding outliers**. Note that boxplot hide the number of values existing behind the variable. 
     
-  ![](images/boxplotexplained.png)
+![](images/boxplotexplained.png)
 
     Source:https://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/
 
-**Box plot of all varients grouped by species
+### Box plot of all varients grouped by species
 ![](graphs/boxplot.PNG)
+## Seaborn boxplots
+   ![](graphs/Capture1.PNG)
 
+## Seaborn boxplot with data points
+   ![](graphs/Capture2.PNG)
+## Violin plots:
+      plays a similar role as a box and whisker plot. It shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared. Unlike a box plot, in which all of the plot components correspond to actual datapoints, the violin plot features a kernel density estimation of the underlying distribution. source:https://seaborn.pydata.org/generated/seaborn.violinplot.html
+   ![](graphs/Capture3.PNG)
+## Pairplot:
+      Pair Plot is used to view the pairwise relationship between all the variables in a dataset and the diagonal axes show the univariate distribution of the variable. It takes the entire dataset as input and distinguishes data on species with varying colors.
+   ![](graphs/Figure_4.png)
 ## Scatter Graph
     
     A scatter plot/ scatter graph is a two-dimensional data visualization that uses dots to represent the values obtained for two different variables - one plotted along the x-axis and the other plotted along the y-axis.
