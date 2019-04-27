@@ -14,17 +14,17 @@
    - [Linear Discriminant Analysis](#LDA)
    - [Summery of Data Set](#summery)
 3. [Exploratry Data Analysis](#analysis)
-   - [Python Libraries](#dataset)
+   - [Python Libraries](#library)
    - [Read Data](#read)
    - [Insight of Data Set](#insight)
-4. [Visualization](#visual)
-   - [Histogram](#hist)
-   - [Boxplot](#box)
-   - [Violin plot](#violin)
-   - [pairsplot](#pair)
-   - [2D Scatter Graph](#scatter)
-5. [Conclusion](#conclusion)
-6. [Reference](#Reference)
+   - [Visualization](#visual)
+      - [Histogram](#hist)
+      - [Boxplot](#box)
+      - [Violin plot](#violin)
+      - [pairsplot](#pair)
+      - [2D Scatter Graph](#scatter)
+4. [Conclusion](#conclusion)
+5. [Reference](#Reference)
   
 
 # 1. Introduction <a name="introduction"></a>
@@ -496,7 +496,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    ```
    ![](graphs/Figure_3.png)
 
-   <p>Thet colour coded 2d scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
+   <p>The colour coded 2d scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
 
      
 # Conclusion <a name="conclusion"></a>
