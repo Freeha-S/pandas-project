@@ -486,7 +486,7 @@ The line that divides the box into 2 parts represents the **median** of the data
     plt.show()
    ```
    ![](graphs/Figure_2.png)
-   <p>From the colour coded graph it is clear from the image data of stosa flowers is seprable from others. The setosa sepals are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer sepal lengths, but there is a lot of overlap between the versicolor and virginca species. that make it dificult to determine an exact species based on the sepal lengthand width of the flowers.</p>
+   <p>From the colour coded graph it is clear from the image data of stosa flowers is seprable from others. The setosa sepal lengths are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer sepal lengths, but there is a lot of overlap between the versicolor and virginca species. that make it dificult to determine an exact species based on the sepal length of the flowers.</p>
  
 
    ```python
