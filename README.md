@@ -3,7 +3,7 @@
 ## Course: H.Dip. in Data Analytics
 ## Lecturer: Dr Ian McLoughlin
 
-# Table of contents <a name="Table"></a>
+# Table of Contents <a name="Table"></a>
 1. [Introduction](#introduction)
    - [Objective](#objective)
    - [Project Plan](#plan)
