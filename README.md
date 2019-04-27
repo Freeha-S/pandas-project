@@ -6,12 +6,15 @@ The aim of this project is to research the iris data set, and  write documentati
 ## Lecturer: Dr Ian McLoughlin
 
 # Project Plan
-- Research 
-   use online resources (kaggale,pandas etc)
-- Make a Rough Draft
+- **Research**
+
+   Use online resources (kaggale,pandas etc) to research the Dataset
+- **Make a Rough Draft**
+   
    make a list of the project requirements
-- Look into other option for coding in python other than code studio
-   I use Jupyter notebook for this project also as it is so easy to make changes and debug the prpject in it.
+- **Look into other option for coding in python other than code studio**
+   
+   I use Jupyter notebook for this project also as it is so easy to make changes and debug the project in it.
 # Background Information
 -----
 ## Iris Flower Data Set
@@ -354,21 +357,21 @@ The line that divides the box into 2 parts represents the **median** of the data
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["sepal_width"] ) 
    plt.show()
    ```
-   ![](graphs/violin1.PNG)
+![](graphs/violin1.png)
    ```python
    #sepal length violin plot
    fig, ax = plt.subplots(figsize =(9, 7)) 
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["sepal_length"] ) 
    plt.show()
    ```
-![](graphs/violin2.PNG)
+![](graphs/violin2.png)
    ```python
    #petal width violin plot
    fig, ax = plt.subplots(figsize =(9, 7)) 
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["petal_width"] ) 
    plt.show()
    ```
-  ![](graphs/violin3.PNG)
+  ![](graphs/violin3.png)
    ```python
    #petal length violin plot
    fig, ax = plt.subplots(figsize =(9, 7)) 
@@ -376,7 +379,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    plt.show()
   ```
 
-  ![](graphs/violin4.PNG)
+  ![](graphs/violin4.png)
 
 ## Pairplot:
    <p align="justify"> Pair Plot is used to view the pairwise relationship between all the variables in a dataset and the diagonal axes show the univariate distribution of the variable. It takes the entire dataset as input and distinguishes data on species with varying colors.</p>
@@ -387,7 +390,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   
    ```
    
-  ![](graphs/Figure_4.png)
+  ![](graphs/figure_4.png)
 
 ## Scatter Graph
     
