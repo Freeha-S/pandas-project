@@ -8,13 +8,17 @@ The aim of this project is to research the iris data set, and  write documentati
 # Project Plan
 - **Research**
 
-   Use online resources (kaggale,pandas etc) to research the Dataset
+   Use online resources (kaggale,pandas etc) to research the Dataset and learn about new libraries using to complete the project
 - **Make a Rough Draft**
    
    make a list of the project requirements
 - **Look into other option for coding in python other than code studio**
    
    I use Jupyter notebook for this project also as it is so easy to make changes and debug the project in it.
+# Data Analysis Process
+    
+![](images/AnalysisProcess.PNG)
+
 # Background Information
 -----
 ## Iris Flower Data Set
@@ -52,9 +56,6 @@ Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/ir
         3. petal_length (in cm)
         4. petal_width (in cm) 
     
-# Data Analysis Process
-    
-![](images/AnalysisProcess.PNG)
 
 # Import Python Libraries for Data Analysis
     
@@ -283,7 +284,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box1.PNG)
+   ![](graphs/box1.png)
 
    ### Petal Width Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -298,7 +299,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box2.PNG)
+   ![](graphs/box2.png)
 
 ### Sepal Length Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -313,7 +314,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box3.PNG)
+   ![](graphs/box3.png)
 
 ### Sepal Width Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -328,7 +329,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box4.PNG)
+   ![](graphs/box4.png)
 
 ## Boxplot with data points
 
@@ -349,7 +350,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    ![](graphs/Capture2.PNG)
 ## Violin plots:
    <p align="justify"> plays a similar role as a box and whisker plot. It shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared. Unlike a box plot, in which all of the plot components correspond to actual datapoints, the violin plot features a kernel density estimation of the underlying distribution. source:https://seaborn.pydata.org/generated/seaborn.violinplot.html </p>
-   <p>jere we are using violin plot to visualise the distribution of the data and its probability density. The thick black bar in the center represents the interquartile range, the thin black line extended from it represents the 95% confidence intervals, and the white dot is the median.</p>
+   <p>Here we are using violin plot to visualise the distribution of the data and its probability density. The white dot is the median.</p>
 
    ```python
    #sepal width violin plot
@@ -424,12 +425,13 @@ The line that divides the box into 2 parts represents the **median** of the data
    ```
    ![](graphs/Figure_3.png)
 
-   there is distinct difference in sizes between the species. Firstly, we look at the Petal width and Petal length across the species. Is it clear in graph that the iris Setosa has a significantly smaller petal width and petal length than the other two species. This difference is also for the sepal width and Sepal length. 
-   These graphs also show that Iris Virginica is the largest species.
-   
+     
 # Conclusion
+   -  There is distinct difference in sizes between the species. if look at scatter plot of petal width and petal length across the species. It is clear in graph that the *iris Setosa* have significantly smaller petal width and petal length than the other two species. 
+   - This difference is also for the sepal width and Sepal length. if look at scatter plot of sepal width and sepal length across the species. It is clear in graph that the iris Setosa have significantly smaller sepal width and sepal length than the other two species. 
+   - These graphs also show that Iris Virginica is the largest species.
    - Colour coded scatter graphs clearly shows that the Iris flowers of setosa species are clearly seprable from other two species. 
-   - Classification on base of Petal length and width is much easier as there are less data point overlaps in versicolor and virginica
+   - Classification on base of Petal length and width is much easier as there are less data point overlaps in versicolor and virginica.
 
 # Reference
 
