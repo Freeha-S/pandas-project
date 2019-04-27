@@ -87,7 +87,7 @@ plt.xlabel("Petal_width_cm")
 plt.ylabel("Count") 
 plt.show()
 
-# histogram for all 4 variables of data set
+# histogram for all 4 varients of data set
 dataset.hist()
 plt.show()
 
