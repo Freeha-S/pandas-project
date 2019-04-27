@@ -8,7 +8,7 @@
    - [Objective](#objective)
    - [Project Plan](#plan)
    - [Technology Used](#technology)
-2. [Bacground Information](#background)
+2. [Background Information](#background)
    - [Iris Flower Data Set](#dataset)
    - [Ronald Fisher](#ronald)
    - [Linear Discriminant Analysis](#LDA)
@@ -163,7 +163,7 @@ Print the name of columns (headings)
    ![](images/columns.PNG)
 
 
-## Insight into Dataset <a name="insight"></a>
+## Insight of Data Set <a name="insight"></a>
 
 - The number of data points and number of columns/features
    ```python
