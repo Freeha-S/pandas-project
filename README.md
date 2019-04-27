@@ -40,7 +40,7 @@ The Problem statement of this project is as follows
  5. Write a summary of your investigations.
  6. Include supporting tables and graphics as you deem necessary.
 
-## Project Plan <a name="objective"></a>
+## Project Plan <a name="plan"></a>
 - **Research**<br>
    Use online resources (kaggale,pandas,moodle etc) to research the Dataset and learn about new libraries using to complete the project. 
 - **Create a Github Repository**<br>
@@ -60,7 +60,7 @@ The Problem statement of this project is as follows
 - pandas ,seaborn,numpy and matplotlib libraries
 
 
-# Background Information <a name="backgroud"></a>
+# Background Information <a name="background"></a>
 -----
 ## Iris Flower Data Set <a name="dataset"></a>
 
@@ -90,7 +90,7 @@ source: [https://rstudio-pubs-static.s3.amazonaws.com/386394_19c4d87014ec4d8c81d
 
 Applying this description to the iris data set - the groups are the 3 iris species (Iris Setosa, Iris Versicolor or Iris Virginica), the set of features would be the petal length, petal width, sepal length and sepal width. 
 
-## Summery of DataSet <a name="use"></a>
+## Summery of DataSet <a name="summery"></a>
 
 **This dataset consist of 150 rows of data in 5 columns** 
 
@@ -223,11 +223,11 @@ Print the name of columns (headings)
    </p>
    </details>
 
-    ![](images/sdescribe.PNG)
+   ![](images/sdescribe.PNG)
 
-    ![](images/verdescribe.PNG)
+   ![](images/verdescribe.PNG)
 
-    ![](images/virdescribe.PNG)
+   ![](images/virdescribe.PNG)
     
 # Visualisation of Dataset <a name="visual"></a>
 ## Histogram <a name="hist"></a>
@@ -479,16 +479,15 @@ The line that divides the box into 2 parts represents the **median** of the data
    plt.show()
    ```
    ![](graphs/Figure_1.png)
-   <p>than colour coded graph was drawn as it is clear from the image data of stosa flowers is seprable from others. The setosa sepals are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer sepal lengths, but there is a lot of overlap between the versicolor and virginca species. that make it dificult to determine an exact species based on the sepal lengthand width of the flowers.</p>
-
+   
    ```python
     sns.set_style("whitegrid")
     sns.FacetGrid(dataset,hue="species", height = 4).map(plt.scatter,"sepal_length","sepal_width").add_legend()
     plt.show()
    ```
    ![](graphs/Figure_2.png)
-
-   <p>Next colour coded 2d scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
+   <p>From the colour coded graph it is clear from the image data of stosa flowers is seprable from others. The setosa sepals are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer sepal lengths, but there is a lot of overlap between the versicolor and virginca species. that make it dificult to determine an exact species based on the sepal lengthand width of the flowers.</p>
+ 
 
    ```python
     sns.set_style("whitegrid")
@@ -497,6 +496,8 @@ The line that divides the box into 2 parts represents the **median** of the data
    ```
    ![](graphs/Figure_3.png)
 
+   <p>Thet colour coded 2d scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
+
      
 # Conclusion <a name="conclusion"></a>
    -  There is distinct difference in sizes between the species. if look at scatter plot of petal width and petal length across the species. It is clear in graph that the *iris Setosa* have significantly smaller petal width and petal length than the other two species. 
@@ -504,7 +505,8 @@ The line that divides the box into 2 parts represents the **median** of the data
    - These graphs also show that Iris Virginica is the largest species.
    - Colour coded scatter graphs clearly shows that the Iris flowers of setosa species are clearly seprable from other two species. 
    - Classification on base of Petal length and width is much easier as there are less data point overlaps in versicolor and virginica.
-This project improve my programming skills and i explore many  new technologies first time like pandas,seaborn and machine learning. During the documentation of this project I face many challanges as markdown is new to me. Overall it was great learning experience and it also made me realize the importance of data analysis. In future my plan is add skilearn and explore some machine learning techniques.
+
+<p>This project improve my programming skills and I explore many  new technologies first time like pandas,seaborn and machine learning. During the documentation of this project I face many challanges as markdown is new to me. Overall it was great learning experience and it also made me realize the importance of data analysis. In future my plan is add skilearn and explore some machine learning techniques.</p>
 
 # Reference <a name="Reference"></a>
 
