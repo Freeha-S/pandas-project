@@ -7,13 +7,13 @@
 1. [Introduction](#introduction)
    - [Objective](#objective)
    - [Project Plan](#plan)
-   - [Technology Used](#technology)
+   - [Technologies Used](#technology)
 2. [Background Information](#background)
    - [Iris Flower Data Set](#dataset)
    - [Ronald Fisher](#ronald)
    - [Linear Discriminant Analysis](#LDA)
-   - [Summery of Data Set](#summery)
-3. [Exploratry Data Analysis](#analysis)
+   - [Summary of Data Set](#summary)
+3. [Exploratory Data Analysis](#analysis)
    - [Python Libraries](#library)
    - [Read Data](#read)
    - [Insight of Data Set](#insight)
@@ -21,7 +21,7 @@
       - [Histogram](#hist)
       - [Boxplot](#box)
       - [Violin plot](#violin)
-      - [pairsplot](#pair)
+      - [Pairsplot](#pair)
       - [2D Scatter Graph](#scatter)
 4. [Conclusion](#conclusion)
 5. [Reference](#Reference)
@@ -52,7 +52,7 @@ The Problem statement of this project is as follows
 - **Time Management**<br>
    As I am new to Python Programming, github and data analysis so I set myself to spend at least 6 hours every week on this project.
 
-## Technology Used <a name="technology"></a>
+## Technologies Used <a name="technology"></a>
 - Jupyter notebook
 - python 3.0
 - Visual Studio Code
@@ -90,7 +90,7 @@ source: [https://rstudio-pubs-static.s3.amazonaws.com/386394_19c4d87014ec4d8c81d
 
 Applying this description to the iris data set - the groups are the 3 iris species (Iris Setosa, Iris Versicolor or Iris Virginica), the set of features would be the petal length, petal width, sepal length and sepal width. 
 
-## Summery of DataSet <a name="summery"></a>
+## Summary of DataSet <a name="summary"></a>
 
 **This dataset consist of 150 rows of data in 5 columns** 
 
