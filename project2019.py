@@ -93,7 +93,12 @@ plt.show()
 
 # Boxplot
 # A box plot shows the distribution of quantitative data across a categorical variable.
+# Boxplot for whole dataset (numerical data columns)
+plt.figure()
+dataset.boxplot()
+plt.show()
 
+# Box plot of all attributes grouped by species
 dataset.boxplot(by="species", figsize=(7,7))
 plt.show()
 
