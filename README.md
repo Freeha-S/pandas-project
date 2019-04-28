@@ -166,7 +166,6 @@ Print the name of columns (headings)
    ```
    ![](images/columns.PNG)
 
-
 ## Insight of Data Set <a name="insight"></a>
 
 - The number of data points and number of columns/features
@@ -256,6 +255,7 @@ Print the name of columns (headings)
    </details>
 
 <p align="center"><img src="graphs/hist1.png"></p>
+
 ### Sepal Width Histogram for the Iris Dataset
    <details><summary>PYTHON CODE</summary>
    <p>
@@ -294,6 +294,7 @@ Print the name of columns (headings)
    </details>
 
    <p align="center"><img src="graphs/hist3.png"></p>
+
    ### Sepal Length Histogram for the Iris Dataset
    <details><summary>PYTHON CODE</summary>
    <p>
@@ -312,9 +313,9 @@ Print the name of columns (headings)
    </details>
 
    <p align="center"><img src="graphs/hist4.png"></p>
-
-   ```
-    # histogram for all 4 variables of data set
+   
+   ### Histogram for all 4 variables of data set
+   ```python
       dataset.hist()
       plt.show()
    ```
@@ -347,6 +348,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    plt.show()
   ```
 <p align="center"><img src="graphs/boxplot.PNG"></p>
+
 ### Boxplots
 ### Petal Length Boxplot group by species
    <details><summary>PYTHON CODE</summary>
@@ -423,9 +425,10 @@ The line that divides the box into 2 parts represents the **median** of the data
      boxthree.set_edgecolor('black')
      plt.show()
    ```
-
    <p align="center"><img src="graphs/Capture2.PNG"></p>
+
 ## Violin plots <a name="violin"></a>
+
    <p align="justify"> plays a similar role as a box and whisker plot. It shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared. Unlike a box plot, in which all of the plot components correspond to actual datapoints, the violin plot features a kernel density estimation of the underlying distribution. source:https://seaborn.pydata.org/generated/seaborn.violinplot.html </p>
    <p>Here we are using violin plot to visualise the distribution of the data and its probability density. The white dot is the median.</p>
 
