@@ -36,7 +36,7 @@ This repositery contains all files and folders of my submissions for (Iris Flowe
 To download this repository 
 1. from https://github.com/Freeha-S/pandas-project 
 2. click on [Clone and download]
-3. Download zip
+3. select Download zip
 
 ## Objective<a name="objective"></a>
 The aim of this project is to research the Iris Flower Data Set, and  write documentation and code in the Python programming language based on that research. The Problem statement of this project is as follows
