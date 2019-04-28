@@ -98,9 +98,9 @@ Applying this description to the iris data set - the groups are the 3 iris speci
 
 **This dataset consist of 150 rows of data in 5 columns** 
 
-    | sepal_length  | sepal_width  | petal_length | petal_width | species  |
-    | :-----------: | :----------: | :----------: | :---------: | :------: |
-    |               |              |              |             |          |
+   | sepal_length  | sepal_width  | petal_length | petal_width | species  |
+   | :-----------: | :----------: | :----------: | :---------: | :------: |
+   |               |              |              |             |          |
 
 **There are 3 classes (types/species) and 4 predictors (variables/attributes) in this data set**
         
