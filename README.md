@@ -1,6 +1,5 @@
 ﻿# Project 2019
 ## Module:Programming and Scripting
-## Course: H.Dip. in Data Analytics
 ## Lecturer: Dr Ian McLoughlin
 
 # Table of Contents <a name="Table"></a>
@@ -25,14 +24,22 @@
       - [2D Scatter Graph](#scatter)
 4. [Conclusion](#conclusion)
 5. [Reference](#Reference)
-  
 
 # 1. Introduction <a name="introduction"></a>
-This repositery contains all files and folders of my submissions for (Iris Flower Dataset) project 2019. This project is part of assessment for Module "Programming and Scripting" at GMIT.
-## Objective<a name="objective"></a>
-The aim of this project is to research the Iris Flower Data Set, and  write documentation and code in the Python programming language based on that research.
+This repositery contains all files and folders of my submissions for (Iris Flower Dataset) project 2019. This project is part of assessment for Module "Programming and Scripting" at GMIT. This repository contain
+   - project-2019.ipynb [jupyter notebook]
+   - project2019.py [python code file]
+   - README.md [documentation file]
+   - images [folder containing images]
+   - graphs [folder containing graps]
 
-The Problem statement of this project is as follows
+To download this repository 
+1. from https://github.com/Freeha-S/pandas-project 
+2. click on [Clone and download]
+3. Download zip
+
+## Objective<a name="objective"></a>
+The aim of this project is to research the Iris Flower Data Set, and  write documentation and code in the Python programming language based on that research. The Problem statement of this project is as follows
  1. Research background information about the data set and write a summary about it.
  2. Keep a list of references you used in completing the project.
  3. Download the data set and write some Python code to investigate it.
@@ -54,33 +61,30 @@ The Problem statement of this project is as follows
 
 ## Technologies Used <a name="technology"></a>
 - Jupyter notebook
-- python 3.0
+- python 3.7.1
 - Visual Studio Code
 - Github
 - pandas ,seaborn,numpy and matplotlib libraries
-
 
 # Background Information <a name="background"></a>
 -----
 ## Iris Flower Data Set <a name="dataset"></a>
 
-<center><img src="images/irisimage.png"></center>
+<p align="center"><img src="images/irisimage.png"></p>
 
 <p  align="justify">The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper "The use of multiple measurements in taxonomic problems" as an example of linear discriminant analysis. 
 This dataset sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two of the three species were collected in the Gaspé Peninsula "all from the same pasture and picked on the same day and measured at the same time by the same person with the same apparatus". </p>
 <p  align="justify">
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor).
 Four features: sepal length, sepal width, petal length and petal width (meaurements in centimeters) for each flower. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.</p>
--
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
 ## Ronald Fisher <a name="ronald"></a>
 
-   <center><img src="images/ronald.png" ></center>
+   <p align="center"><img src="images/ronald.png" ></p>
 
 <p>Sir Ronald Aylmer Fisher, byname R.A. Fisher, (born February 17, 1890, London, England—died July 29, 1962, Adelaide, Australia), British statistician and geneticist who pioneered the application of statistical procedures to the design of scientific experiments.</p>
-For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics".<br>
-source:[https://en.wikipedia.org/wiki/Ronald_Fisher]
+For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science" and "the single most important figure in 20th century statistics". source: [https://en.wikipedia.org/wiki/Ronald_Fisher]
 
 ## Liner Discriminant Analysis <a name="LDA"></a>
 Linear discriminant analysis (LDA),  is a generalization of Fisher's linear discriminant, a method used in statistics, pattern recognition and machine learning.
@@ -148,7 +152,7 @@ Import following libraries in program
   First download the datset csv file from the 
 Dataset Link : https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data and save it in the project folder as iris.cvs.
 
-![](images/iriscsv.PNG)
+<p align="center"><img src="images/iriscsv.PNG"></p>
     
 *( CSV is a simple file format used to store tabular data. CSV (comma-separated value) file format is common for transferring and storing data. The ability to read, manipulate, and write data to and from CSV files using Python is a key skill for any data scientist or business analysis.)*
    
@@ -169,19 +173,19 @@ Print the name of columns (headings)
    ```python
      print(dataset.shape)
    ```
-    (150,5)
+         (150,5)
 
 - There is not any null value in data set *check if there is any empty cell*
    ```python 
      print(dataset.isnull().any())
    ```
-   ![](images/notNull.png)
+   <p align="center"><img src="images/notNull.png"></p>
 
 - It is a **balanced dataset**. The number of observations is same for all the classes in the dataset.
    ```python   
      print(dataset["species"].value_counts())
    ```
-   ![](images/rows.png)
+   <p align="center"><img src="images/rows.png"></p>
    
     50 rows for each species
 
@@ -189,19 +193,19 @@ Print the name of columns (headings)
    ```python
      print(dataset.info()) 
    ```
-   ![](images/datasetInfo.png)
+   <p align="center"><img src="images/datasetInfo.png"></p>
 
 - First 10 rows of data set
    ```python
       print(dataset.head(10)) 
    ```
-   ![](images/head.png)
+   <p align="center"><img src="images/head.png"></p>
  
 - Statistics summery of dataset
    ```python
      print(dataset.describe()) 
    ```
-    ![](images/datasetdescribe.PNG)
+    <p align="center"><img src="images/datasetdescribe.PNG"></p>
 
 - Statistics summery of dataset of three species seprately
 <details><summary>PYTHON CODE</summary>
@@ -223,11 +227,11 @@ Print the name of columns (headings)
    </p>
    </details>
 
-   ![](images/sdescribe.PNG)
+   <p align="center"><img src="images/sdescribe.PNG"></p>
 
-   ![](images/verdescribe.PNG)
+   <p align="center"><img src="images/verdescribe.PNG"></p>
 
-   ![](images/virdescribe.PNG)
+   <p align="center"><img src="images/virdescribe.PNG"></p>
     
 # Visualisation of Dataset <a name="visual"></a>
 ## Histogram <a name="hist"></a>
@@ -251,7 +255,7 @@ Print the name of columns (headings)
    </p>
    </details>
 
-![](graphs/hist1.png)
+<p align="center"><img src="graphs/hist1.png"></p>
 ### Sepal Width Histogram for the Iris Dataset
    <details><summary>PYTHON CODE</summary>
    <p>
@@ -269,7 +273,8 @@ Print the name of columns (headings)
    </p>
    </details>
 
-   ![](graphs/hist2.png)
+   <p align="center"><img src="graphs/hist2.png"></p>
+
 ### Sepal Length Histogram for the Iris Dataset
    <details><summary>PYTHON CODE</summary>
    <p>
@@ -288,7 +293,7 @@ Print the name of columns (headings)
    </p>
    </details>
 
-   ![](graphs/hist3.png)
+   <p align="center"><img src="graphs/hist3.png"></p>
    ### Sepal Length Histogram for the Iris Dataset
    <details><summary>PYTHON CODE</summary>
    <p>
@@ -306,14 +311,14 @@ Print the name of columns (headings)
    </p>
    </details>
 
-   ![](graphs/hist4.png)
+   <p align="center"><img src="graphs/hist4.png"></p>
 
    ```
     # histogram for all 4 variables of data set
       dataset.hist()
       plt.show()
    ```
-![](graphs/Capture.PNG)
+<p align="center"><img src="graphs/Capture.PNG"></p>
 
 ## BoxPlot <a name="box"></a>
    
@@ -323,7 +328,7 @@ The line that divides the box into 2 parts represents the **median** of the data
 <p>The best tool to identify the outliers is the box plot.</p>
 
     
-&amp&amp&amp![](images/boxplotexplained.png)
+<p align="center"><img src="images/boxplotexplained.png")</p>
 
     Source:https://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/
 ### Boxplot of whole data set
@@ -333,7 +338,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    dataset.boxplot()
    plt.show()
   ```
-  ![](graphs/boxplot1.png)
+  <p align="center"><img src="graphs/boxplot1.png"></p>
 
 ### Box plot of all varients grouped by species
 
@@ -341,7 +346,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    dataset.boxplot(by="species", figsize=(7,7))
    plt.show()
   ```
-![](graphs/boxplot.PNG)
+<p align="center"><img src="graphs/boxplot.PNG"></p>
 ### Boxplots
 ### Petal Length Boxplot group by species
    <details><summary>PYTHON CODE</summary>
@@ -356,7 +361,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box1.png)
+   <p align="center"><img src="graphs/box1.png"></p>
 
    ### Petal Width Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -371,7 +376,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box2.png)
+   <p align="center"><img src="graphs/box2.png"></p>
 
 ### Sepal Length Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -386,7 +391,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box3.png)
+   <p align="center"><img src="graphs/box3.png"></p>
 
 ### Sepal Width Boxplot group by Species
    <details><summary>PYTHON CODE</summary>
@@ -401,7 +406,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   </p>
   </details>
 
-   ![](graphs/box4.png)
+   <p align="center"><img src="graphs/box4.png"></p>
 
 ## Boxplot with data points
 
@@ -419,7 +424,7 @@ The line that divides the box into 2 parts represents the **median** of the data
      plt.show()
    ```
 
-   ![](graphs/Capture2.PNG)
+   <p align="center"><img src="graphs/Capture2.PNG"></p>
 ## Violin plots <a name="violin"></a>
    <p align="justify"> plays a similar role as a box and whisker plot. It shows the distribution of quantitative data across several levels of one (or more) categorical variables such that those distributions can be compared. Unlike a box plot, in which all of the plot components correspond to actual datapoints, the violin plot features a kernel density estimation of the underlying distribution. source:https://seaborn.pydata.org/generated/seaborn.violinplot.html </p>
    <p>Here we are using violin plot to visualise the distribution of the data and its probability density. The white dot is the median.</p>
@@ -430,21 +435,21 @@ The line that divides the box into 2 parts represents the **median** of the data
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["sepal_width"] ) 
    plt.show()
    ```
-![](graphs/violin1.png)
+<p align="center"><img src="graphs/violin1.png"></p>
    ```python
    #sepal length violin plot
-   fig, ax = plt.subplots(figsize =(9, 7)) 
+   fig, ax = plt.subplots(figsize =(9, 7))</p>
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["sepal_length"] ) 
    plt.show()
    ```
-![](graphs/violin2.png)
+<p align="center"><img src="graphs/violin2.png"></p>
    ```python
    #petal width violin plot
    fig, ax = plt.subplots(figsize =(9, 7)) 
    sns.violinplot(ax = ax, x = dataset["species"],y = dataset["petal_width"] ) 
    plt.show()
    ```
-  ![](graphs/violin3.png)
+  <p align="center"><img src= "graphs/violin3.png"></p>
    ```python
    #petal length violin plot
    fig, ax = plt.subplots(figsize =(9, 7)) 
@@ -452,7 +457,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    plt.show()
   ```
 
-  ![](graphs/violin4.png)
+  <p align="center"><img src="graphs/violin4.png"></p>
 
 ## Pairplot <a name="pair"></a>
    <p align="justify"> Pair Plot is used to view the pairwise relationship between all the variables in a dataset and the diagonal axes show the univariate distribution of the variable. It takes the entire dataset as input and distinguishes data on species with varying colors.</p>
@@ -463,7 +468,7 @@ The line that divides the box into 2 parts represents the **median** of the data
   
    ```
    
-  ![](graphs/figure_4.png)
+  <p align="center"><img src="graphs/figure_4.png"></p>
 
 ## 2D Scatter Graph <a name="scatter"></a>
     
@@ -478,14 +483,14 @@ The line that divides the box into 2 parts represents the **median** of the data
    dataset.plot(kind="scatter",x="sepal_length", y="sepal_width")
    plt.show()
    ```
-   ![](graphs/Figure_1.png)
+   <p align="center"><img src="graphs/Figure_1.png"></p>
    
    ```python
     sns.set_style("whitegrid")
     sns.FacetGrid(dataset,hue="species", height = 4).map(plt.scatter,"sepal_length","sepal_width").add_legend()
     plt.show()
    ```
-   ![](graphs/Figure_2.png)
+   <p align="center"><img src="graphs/Figure_2.png"></p>
    <p>From the colour coded graph it is clear from the image data of stosa flowers is seprable from others. The setosa sepal lengths are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer sepal lengths, but there is a lot of overlap between the versicolor and virginca species. that make it dificult to determine an exact species based on the sepal length of the flowers.</p>
  
 
@@ -494,11 +499,10 @@ The line that divides the box into 2 parts represents the **median** of the data
     sns.FacetGrid(dataset,hue="species", height = 4).map(plt.scatter,"petal_length","petal_width").add_legend()
     plt.show()
    ```
-   ![](graphs/Figure_3.png)
+   <p align="center"><img src="graphs/Figure_3.png"></p>
 
-   <p>The colour coded 2d scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
-
-     
+   <p>The colour coded 2D scatter graph of petal width and length shows the same that the data of stosa is clearly seprable. The setosa petal are shorter, the versicolor somewhere in the middle and the viriginca flowers generally have longer petal lengths, and there is little overlap between the versicolor and virginca species. therefore it is easier to determine an exact species based on the petal lengths and width of the flowers.</p>
+  
 # Conclusion <a name="conclusion"></a>
    -  There is distinct difference in sizes between the species. if look at scatter plot of petal width and petal length across the species. It is clear in graph that the *iris Setosa* have significantly smaller petal width and petal length than the other two species. 
    - This difference is also for the sepal width and Sepal length. if look at scatter plot of sepal width and sepal length across the species. It is clear in graph that the iris Setosa have significantly smaller sepal width and sepal length than the other two species. 
@@ -506,7 +510,7 @@ The line that divides the box into 2 parts represents the **median** of the data
    - Colour coded scatter graphs clearly shows that the Iris flowers of setosa species are clearly seprable from other two species. 
    - Classification on base of Petal length and width is much easier as there are less data point overlaps in versicolor and virginica.
 
-<p>This project improve my programming skills and I explore many  new technologies first time like pandas,seaborn and machine learning. During the documentation of this project I face many challanges as markdown is new to me. Overall it was great learning experience and it also made me realize the importance of data analysis. In future my plan is add skilearn and explore some machine learning techniques.</p>
+<p>I am novice at python programming and data analysis .This project improved my programming skills and I explore many  new technologies first time like pandas,seaborn and matplotlip. During the documentation of this project I face many challanges as markdown is new to me. Overall it was great learning experience and it also made me realize the importance of data analysis. In future my plan is to improve my code as I would like to add some more descriptive graphs, use seaborn and add Scikit-learn to explore some machine learning techniques.</p>
 
 # Reference <a name="Reference"></a>
 
