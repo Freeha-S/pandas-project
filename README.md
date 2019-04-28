@@ -173,7 +173,7 @@ Print the name of columns (headings)
    ```python
      print(dataset.shape)
    ```
-         (150,5)
+   <p align="center">(150 , 5)</p>
 
 - There is not any null value in data set *check if there is any empty cell*
    ```python 
